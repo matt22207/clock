@@ -1,3 +1,3 @@
 # clock
 
-!(./clock.svg)
+![test](/clock.svg)
