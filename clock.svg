@@ -7,10 +7,8 @@
     only after the DOM is created (e.g. window.onload in a browser)
   -->
   <script>
-    // Create whatever string you want
-    var dateString = (new Date).toString();
-
-    // Set the string content of the Text Node child of the
-    document.getElementById('now').firstChild.nodeValue = dateString;
+    setInterval(function() {
+    	  document.getElementById("now").firstChild.nodeValue = (new Date).toString();
+    }, 1000);
   </script>
 </svg>
