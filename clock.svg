@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <text x="0" y="15" fill="red"><tspan id="now">(time)</tspan></text>
+
+  <!--
+    This script block must either be after the element in the source code
+    or else the code below must be wrapped in a callback that is invoked
+    only after the DOM is created (e.g. window.onload in a browser)
+  -->
+  <script>
+    // Create whatever string you want
+    var dateString = (new Date).toDateString();
+
+    // Set the string content of the Text Node child of the <tspan>
+    document.getElementById('now').firstChild.nodeValue = dateString;
+  </script>
+</svg>
