@@ -8,7 +8,7 @@
   -->
   <script>
     // Create whatever string you want
-    var dateString = (new Date).toDateString();
+    var dateString = (new Date).toString();
 
     // Set the string content of the Text Node child of the
     document.getElementById('now').firstChild.nodeValue = dateString;
